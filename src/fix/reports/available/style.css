@@ -1,0 +1,16 @@
+/*
+   Fix amount and balance wordwrap bug
+   at https://www.upwork.com/reports/available
+*/
+.oTableLite tbody .txtRight {
+	white-space: nowrap;
+}
+
+/*
+   Fix date wordwrap bug at
+   https://www.upwork.com/reports/available
+*/
+.oTableLite tbody td:nth-child(1),
+.oTableLite tbody td:nth-child(2) {
+	min-width: 100px;
+}
