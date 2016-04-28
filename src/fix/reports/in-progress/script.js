@@ -9,6 +9,11 @@ $().ready(function(){
 
         // Parsing rate
         var rate = $('td:eq(9)', this).text().trim();
+
+        if (rate == 'N/A') {
+            return;
+        }
+
         rate = rate.substr(1); // Cut dollar sign
         rate = rate.substr(0, rate.length-3); // Cut "/hr"
         rate = parseFloat(rate);
