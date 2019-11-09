@@ -4,6 +4,11 @@ Enhance UpWork interface.
 
 ## Changelog
 
+**v0.3.0**:
+
+* Removed wordwrap fixes as UpWork already fixed that
+* Fixed daily & per-cell earnings as UpWork changed layout
+
 **v0.2.0**:
 
 * Added per-cell earnings at [https://www.upwork.com/reports/in-progress](https://www.upwork.com/reports/in-progress).

@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "UpWorkEnhancements",
-    "version": "0.1.0",
+    "version": "0.3.0",
     "description": "Enhance UpWork interface",
     "icons": {
         "16": "images/logo.png",
@@ -9,10 +9,10 @@
         "48": "images/logo.png"
     },
     "content_scripts": [{
-        "matches": ["https://www.upwork.com/reports/available"],
-        "css":["src/fix/reports/available/style.css"]
-    },{
-        "matches": ["https://www.upwork.com/reports/in-progress"],
+        "matches": [
+            "https://www.upwork.com/ab/reports/in-progress",
+            "https://www.upwork.com/ab/reports/in-review"
+        ],
         "css":["src/fix/reports/in-progress/style.css"],
         "js":[
             "src/vendor/jquery.min.js",
